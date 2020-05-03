@@ -18,15 +18,16 @@ public class RansomNoteFinder {
         } else if (ransom == null || magazine == null) {
             return false;
         }
-        char[] ransomChars = ransom.toCharArray();
+        String[] ransomChars = ransom.split("");
         boolean isConstruct = true;
-        for (char rChar : ransomChars) {
-            String sChar = String.valueOf(rChar);
-            if (magazine.contains(sChar)) {
-                magazine = magazine.replaceFirst(sChar, "");
-            } else {
-                isConstruct = false;
-                break;
+        for (String sChar : ransomChars) {
+            if (!sChar.equals("")) {
+                if (magazine.contains(sChar)) {
+                    magazine = magazine.replaceFirst(sChar, "");
+                } else {
+                    isConstruct = false;
+                    break;
+                }
             }
         }
         return isConstruct;
