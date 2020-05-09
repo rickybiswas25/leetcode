@@ -18,32 +18,32 @@ public class RansomNoteFinderUnitTest {
     }
 
     @Test
-    void should_return_true_if_ransom_note_can_found() {
-        assertThat(this.noteFinder.construct("aa", "aba"))
+    void shouldReturnTrueIfRansomNoteCanFound() {
+        assertThat(this.noteFinder.isConstructable("aa", "aba"))
                 .isTrue();
     }
 
     @Test
-    void should_return_false_if_ransom_null() {
-        assertThat(this.noteFinder.construct(null, "aba"))
+    void shouldReturnFalseIfRansomNull() {
+        assertThat(this.noteFinder.isConstructable(null, "aba"))
                 .isFalse();
     }
 
     @Test
-    void should_return_false_if_magazine_null() {
-        assertThat(this.noteFinder.construct("aa", null))
+    void shouldReturnFalseIfMagazineNull() {
+        assertThat(this.noteFinder.isConstructable("aa", null))
                 .isFalse();
     }
 
     @Test
-    void should_return_true_if_both_are_null() {
-        assertThat(this.noteFinder.construct(null, null))
+    void shouldReturnTrueIfNBothAreNull() {
+        assertThat(this.noteFinder.isConstructable(null, null))
                 .isTrue();
     }
 
     @Test
-    void should_return_false_if_ransom_note_can_not_found() {
-        assertThat(this.noteFinder.construct("aaavb", "aa"))
+    void shouldReturnFalseIfRansomNoteCanNotFound() {
+        assertThat(this.noteFinder.isConstructable("aaavb", "aa"))
                 .isFalse();
     }
 }

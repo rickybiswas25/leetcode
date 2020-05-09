@@ -18,7 +18,7 @@ public class MajorityNumberFinder {
     }
 
     @Test
-    void proper_test_case_1() {
+    void testFoundMajorityNumber1() {
         int[] nums = new int[]{3, 2, 3};
         assertThat(this.finder.find(nums))
                 .isEqualTo(3);
@@ -26,7 +26,7 @@ public class MajorityNumberFinder {
     }
 
     @Test
-    void proper_test_case_2() {
+    void testFoundMajorityNumber2() {
         int[] nums = new int[]{2, 2, 1, 1, 1, 2, 2};
         assertThat(this.finder.find(nums))
                 .isEqualTo(2);

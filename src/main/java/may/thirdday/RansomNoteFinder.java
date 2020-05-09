@@ -12,7 +12,7 @@ Note:
 You may assume that both strings contain only lowercase letters.*/
 public class RansomNoteFinder {
 
-    public boolean construct(String ransom, String magazine) {
+    public boolean isConstructable(String ransom, String magazine) {
         if (ransom == null && magazine == null) {
             return true;
         } else if (ransom == null || magazine == null) {

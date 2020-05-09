@@ -18,25 +18,25 @@ public class FindJewelTest {
     }
 
     @Test
-    void should_return_0_when_jewel_is_null() {
+    void shouldReturn0WhenJewelIsNull() {
         assertThat(this.jewel.find(null, "aaZZZZ"))
                 .isEqualTo(0);
     }
 
     @Test
-    void should_return_0_when_stone_is_null() {
+    void shouldReturn0WhenStoneIsNull() {
         assertThat(this.jewel.find("aa", null))
                 .isEqualTo(0);
     }
 
     @Test
-    void test_for_proper_calculation_1() {
+    void shouldReturnCorrectAnswerWhenStringLengthLarge() {
         assertThat(this.jewel.find("aA", "aAAbbbb"))
                 .isEqualTo(3);
     }
 
     @Test
-    void test_for_proper_calculation_2() {
+    void shouldReturnCorrectAnswerWhenStringLengthSmall() {
         assertThat(this.jewel.find("z", "ZZ"))
                 .isEqualTo(0);
     }

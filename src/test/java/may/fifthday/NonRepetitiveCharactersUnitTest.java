@@ -18,32 +18,32 @@ public class NonRepetitiveCharactersUnitTest {
     }
 
     @Test
-    void should_return_index_when_codes_find_it_1() {
-        assertThat(this.nonRepetitiveCharacters.indexFinder("leetcode"))
+    void shouldReturnIndexWhenCodesFindIt() {
+        assertThat(this.nonRepetitiveCharacters.findNonRepetitiveCharIndex("leetcode"))
                 .isEqualTo(0);
     }
 
     @Test
-    void test_for_empty_string() {
-        assertThat(this.nonRepetitiveCharacters.indexFinder(""))
+    void shouldReturnNegetiveValueIfEmptyStringReturn() {
+        assertThat(this.nonRepetitiveCharacters.findNonRepetitiveCharIndex(""))
                 .isEqualTo(-1);
     }
 
     @Test
-    void test_for_null_string() {
-        assertThat(this.nonRepetitiveCharacters.indexFinder(null))
+    void shouldReturnNegetiveValueIfNulltringReturn() {
+        assertThat(this.nonRepetitiveCharacters.findNonRepetitiveCharIndex(null))
                 .isEqualTo(-1);
     }
 
     @Test
-    void should_return_index_when_codes_find_it_2() {
-        assertThat(this.nonRepetitiveCharacters.indexFinder("loveleetcode"))
+    void shouldReturnIndexWhenCodesFindIt1() {
+        assertThat(this.nonRepetitiveCharacters.findNonRepetitiveCharIndex("loveleetcode"))
                 .isEqualTo(2);
     }
 
     @Test
-    void should_return_negative_when_codes_dont_find_any_non_repetitive() {
-        assertThat(this.nonRepetitiveCharacters.indexFinder("aaaaaaa"))
+    void shouldReturnNegetiveValueWhenIndexNotFound() {
+        assertThat(this.nonRepetitiveCharacters.findNonRepetitiveCharIndex("aaaaaaa"))
                 .isEqualTo(-1);
     }
 

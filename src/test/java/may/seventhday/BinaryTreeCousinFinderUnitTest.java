@@ -19,7 +19,7 @@ public class BinaryTreeCousinFinderUnitTest {
     }
 
     @Test
-    void test() {
+    void testCousinFinder1() {
         TreeNode node = new TreeNode(1);
         node.left = new TreeNode(2);
         node.right = new TreeNode(3);
@@ -29,8 +29,7 @@ public class BinaryTreeCousinFinderUnitTest {
     }
 
     @Test
-    void test2() {
-        //[1,2,3,null,4,null,5]
+    void testCousinFinder2() {
         TreeNode node = new TreeNode(1);
         node.left = new TreeNode(2);
         node.right = new TreeNode(3);
@@ -39,7 +38,4 @@ public class BinaryTreeCousinFinderUnitTest {
         assertThat(this.finder.isCousins(node, 5, 4))
                 .isTrue();
     }
-
-
-
 }

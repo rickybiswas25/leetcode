@@ -18,7 +18,7 @@ public class CoordinateEvaluatorUnitTest {
     }
 
     @Test
-    void test1() {
+    void ctestCoordinateEvaluatorTest() {
         int[][] cordinates = new int[][]{{1, 1}, {2, 2}, {3, 4}, {4, 5}, {5, 6}, {7, 7}};
         assertThat(this.evaluator.evaluate(cordinates))
                 .isFalse();
@@ -26,7 +26,7 @@ public class CoordinateEvaluatorUnitTest {
     }
 
     @Test
-    void test2() {
+    void ctestCoordinateEvaluatorTest1() {
         int[][] cordinates = new int[][]{{1,2},{2,3},{3,4},{4,5},{5,6},{6,7}};
         assertThat(this.evaluator.evaluate(cordinates))
                 .isTrue();
@@ -34,7 +34,7 @@ public class CoordinateEvaluatorUnitTest {
     }
 
     @Test
-    void test3() {
+    void ctestCoordinateEvaluatorTest2() {
         int[][] cordinates = new int[][]{{1,1},{2,2},{3,4},{4,5},{5,6},{7,7}};
         assertThat(this.evaluator.evaluate(cordinates))
                 .isFalse();
@@ -42,7 +42,7 @@ public class CoordinateEvaluatorUnitTest {
     }
 
     @Test
-    void test4() {
+    void ctestCoordinateEvaluatorTest3() {
         int[][] cordinates = new int[][]{{-3,-2},{-1,-2},{2,-2},{-2,-2},{0,-2}};
         assertThat(this.evaluator.evaluate(cordinates))
                 .isTrue();
@@ -50,7 +50,7 @@ public class CoordinateEvaluatorUnitTest {
     }
 
     @Test
-    void test5() {
+    void ctestCoordinateEvaluatorTest4() {
         int[][] cordinates = new int[][]{{4,8},{-2,8},{1,8},{8,8},{-5,8},{0,8},{7,8},{5,8}};
         assertThat(this.evaluator.evaluate(cordinates))
                 .isTrue();

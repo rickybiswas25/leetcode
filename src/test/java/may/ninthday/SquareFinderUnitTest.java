@@ -56,8 +56,4 @@ public class SquareFinderUnitTest {
         assertThat(this.finder.find(4))
                 .isTrue();
     }
-
-
-
-
 }

@@ -19,7 +19,7 @@ class ComplementNumberFinderTest {
     }
 
     @Test
-    void findComplement() {
+    void testFindComplement() {
         assertThat(this.finder.findComplement(5))
                 .isEqualTo(2);
 

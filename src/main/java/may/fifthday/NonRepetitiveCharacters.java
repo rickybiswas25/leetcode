@@ -10,7 +10,7 @@ import java.util.Map;
  */
 public class NonRepetitiveCharacters {
 
-    public int indexFinder(String s) {
+    public int findNonRepetitiveCharIndex(String s) {
         if (s == null || s.equalsIgnoreCase("")) {
             return -1;
         }
