@@ -7,7 +7,11 @@ import java.util.Map;
 /**
  * Created by Deb
  * Date : 05/05/2020.
- */
+ *
+ *
+ *  Given a string, find the first non-repeating character in it and return it's index. If it doesn't exist, return -1.
+ *
+ * */
 public class NonRepetitiveCharacters {
 
     public int findNonRepetitiveCharIndex(String s) {

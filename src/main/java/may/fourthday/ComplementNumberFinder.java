@@ -6,7 +6,10 @@ import java.util.stream.Stream;
 /**
  * Created by Deb
  * Date : 04/05/2020.
- */
+ *
+ * Given a positive integer num, output its complement number. The complement strategy is to flip the bits of its binary representation.
+ *
+ * */
 public class ComplementNumberFinder {
 
     public int findComplement(int num) {
