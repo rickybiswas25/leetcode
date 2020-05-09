@@ -2,7 +2,6 @@ package may.seventhday;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import sun.reflect.generics.tree.Tree;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
